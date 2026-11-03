@@ -14,11 +14,15 @@ the maintainers of the dataset.**
 
 ## Requirements
 
-* Python 3
+* Python 3.10–3.12 (`python -m pip install -r requirements.txt`)
 * [`axel`](https://github.com/axel-download-accelerator/axel)
 * CDF (https://www.scivision.dev/spacepy-install-anaconda-python/)
 
 ## Usage
+
+Only load trusted dataset archives, `.npz` files, and camera `.pkl` files. The
+preprocessing scripts deliberately enable NumPy pickle loading for the existing
+object-array format; loading these files can execute Python code.
 
 1. Firstly, you will need to create an account at
    http://vision.imar.ro/human3.6m/ to gain access to the dataset.
